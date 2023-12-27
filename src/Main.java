@@ -3,16 +3,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhap vao canh a: ");
-        int a = scanner.nextInt();
-        System.out.println("Nhap vao canh b: ");
-        int b = scanner.nextInt();
-        int s = a * b;
-        int p = (a + b)* 2;
-        System.out.println("Dien tich hinh chu nhat la: " +s);
-        System.out.println("Chu vi hinh chu nhat la: " +p);
-
+        User users[] = new User[3];
+        System.out.println("in ra ten cua User");
+        System.out.println("in ra ten cua User thu 3");
+        try {
+            System.out.println(users[2].getName());
+        }
+        catch (NullPointerException e){
+            System.out.println(e);
+        }
+        System.out.println("in ra id cua User");
     }
 }
 
